@@ -152,7 +152,7 @@ class App:
               self.coincidence_result_label.config(text="No independent occupancy phenomenon")
            else:
               percentage = count / total_pairs * 100
-              self.independence_result_label.config(text=f"ID(>{threshold}Å)% ={percentage:.2f}%")
+              self.independence_result_label.config(text=f"ID(>{threshold}nm)% ={percentage:.2f}%")
 
     def calc_coincidence(self, a_coords, b_coords, threshold):
         matched_pairs = []
@@ -180,7 +180,7 @@ class App:
             self.coincidence_result_label.config(text="No competitive adsorption occupancy phenomenon")
         else:
             percentage = count / total_pairs * 100
-            self.coincidence_result_label.config(text=f"OD(<{threshold}Å)% ={percentage:.2f}%")
+            self.coincidence_result_label.config(text=f"OD(<{threshold}nm)% ={percentage:.2f}%")
     
        # return percentage
      
